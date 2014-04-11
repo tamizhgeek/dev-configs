@@ -1,0 +1,2 @@
+(setq-default indent-tabs-mode t)
+(setq ruby-indent-level 8)
