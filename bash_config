@@ -1,0 +1,29 @@
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Add intellij IDEA path
+PATH=$PATH:$HOME/Installed/idea-IC-129.1359/bin
+
+function ec2()
+{
+ssh  -o GSSAPIAuthentication=no -i ~/Downloads/indix ec2-user@$1
+}
+
+function ec2up
+{
+scp  -o GSSAPIAuthentication=no -i ~/Downloads/indix ec2-user@$1 $2
+}
+
+function ec2down
+{
+scp  -o GSSAPIAuthentication=no -i ~/Downloads/indix $1 ec2-user@$2
+}
+
+
+function gitup
+{
+
+git stash
+git pull --rebase
+git stash pop
+}
