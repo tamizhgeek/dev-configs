@@ -1,0 +1,9 @@
+[user]
+	email = tamizhgeek@gmail.com
+	name = Azhagu Selvan SP
+[color]
+	ui = true
+[alias]
+	nu = 
+	pm = push origin master
+
